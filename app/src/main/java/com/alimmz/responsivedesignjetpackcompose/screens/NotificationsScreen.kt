@@ -184,9 +184,9 @@ fun NotificationItem(
 
 @Composable
 fun NotificationDetail(
+    modifier: Modifier = Modifier,
     notification: Notification?,
     onBackClick: (() -> Unit)? = null,
-    modifier: Modifier = Modifier
 ) {
     Box(
         modifier = modifier.fillMaxSize(),

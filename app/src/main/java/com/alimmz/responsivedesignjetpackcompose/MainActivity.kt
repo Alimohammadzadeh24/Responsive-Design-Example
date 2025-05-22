@@ -1,10 +1,14 @@
 package com.alimmz.responsivedesignjetpackcompose
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.ComponentActivity
+import androidx.activity.SystemBarStyle
 import androidx.activity.compose.setContent
+import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -19,6 +23,12 @@ import com.alimmz.responsivedesignjetpackcompose.ui.theme.ResponsiveDesignExampl
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge(
+            statusBarStyle = SystemBarStyle.auto(
+                darkScrim = 0xFFFFF,
+                lightScrim = 0xFF000,
+            )
+        )
         setContent {
             ResponsiveDesignExampleTheme {
                 Surface(
@@ -32,6 +42,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+@SuppressLint("ConfigurationScreenWidthHeight")
 @Composable
 fun MainScreen() {
     val navController = rememberNavController()
@@ -52,7 +63,7 @@ fun MainScreen() {
         }
     } else {
         // Phone layout with bottom navigation
-        androidx.compose.material3.Scaffold(
+        Scaffold(
             bottomBar = {
                 BottomNavigationBar(navController = navController)
             }
