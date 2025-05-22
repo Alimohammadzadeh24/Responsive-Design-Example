@@ -28,7 +28,7 @@ _Insert screenshots of your app here (e.g., phone and tablet layouts)._
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/responsive-design-example.git
+   git clone https://github.com/Alimohammadzadeh24/Responsive-Design-Example.git
    ```
 
 2. Open the project in Android Studio.
