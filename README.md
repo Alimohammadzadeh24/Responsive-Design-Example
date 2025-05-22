@@ -13,7 +13,21 @@ This project demonstrates how to implement responsive navigation and layouts in 
 
 ## Screenshots
 
-_Insert screenshots of your app here (e.g., phone and tablet layouts)._
+### Phone Layout
+
+![Phone Layout](screenshots/phone_layout.png)
+
+### Tablet Layout
+
+![Tablet Layout](screenshots/tablet_layout.png)
+
+### Notification Detail (Phone)
+
+![Notification Detail Phone](screenshots/notification_detail_phone.png)
+
+### Notification Detail (Tablet)
+
+![Notification Detail Tablet](screenshots/notification_detail_tablet.png)
 
 ## Getting Started
 
